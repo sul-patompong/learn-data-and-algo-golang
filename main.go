@@ -10,6 +10,7 @@ import (
 	graphs "github.com/sul-patompong/learn-go-data-and-algo/Graphs"
 	hashtable "github.com/sul-patompong/learn-go-data-and-algo/HashTable"
 	LinkedList "github.com/sul-patompong/learn-go-data-and-algo/LinkedLists"
+	basicsorting "github.com/sul-patompong/learn-go-data-and-algo/Sorting/BasicSorting"
 	stackandqueue "github.com/sul-patompong/learn-go-data-and-algo/StackAndQueue"
 )
 
@@ -31,4 +32,11 @@ func main() {
 	graphs.Play()
 	fmt.Println("\n\nHash Table")
 	hashtable.Play()
+
+	fmt.Println(basicsorting.BubbleSort([]int{3, 4, 5, 2, 1, 9, 5, 6, 7, 8, 7, 5, 4, -7, 3, 232, 3, 45, 56}))
+	fmt.Println(basicsorting.SelectionSort([]int{3, 4, 5, 2, 1, 9, 5, 6, 7, 8, 7, 5, 4, -7, 3, 232, 3, 45, 56}))
+
+	fmt.Println("Insertion sorted")
+	fmt.Println(basicsorting.InsertionSort([]int{3, 4, 5, 2, 1, 9, 5, 6, 7, 8, 7, 5, 4, -7, 3, 232, 3, 45, 56}))
+
 }
