@@ -11,6 +11,7 @@ import (
 	hashtable "github.com/sul-patompong/learn-go-data-and-algo/HashTable"
 	LinkedList "github.com/sul-patompong/learn-go-data-and-algo/LinkedLists"
 	basicsorting "github.com/sul-patompong/learn-go-data-and-algo/Sorting/BasicSorting"
+	mergesort "github.com/sul-patompong/learn-go-data-and-algo/Sorting/MergeSort"
 	stackandqueue "github.com/sul-patompong/learn-go-data-and-algo/StackAndQueue"
 )
 
@@ -38,5 +39,8 @@ func main() {
 
 	fmt.Println("Insertion sorted")
 	fmt.Println(basicsorting.InsertionSort([]int{3, 4, 5, 2, 1, 9, 5, 6, 7, 8, 7, 5, 4, -7, 3, 232, 3, 45, 56}))
+
+	fmt.Println("Merge sorted")
+	fmt.Println(mergesort.MergeSort([]int{3, 4, 5, 2, 1, 9, 5, 6, 7, 8, 7, 5, 4, -7, 3, 2, 3, 5, 6}))
 
 }
